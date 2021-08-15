@@ -19,4 +19,7 @@ Route::get('/','HomeController@welcome') ;
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/registre', 'HomeController@registre')->name('registre');
+
+Route::get('/admin', function(){
+    return view('admin.dashboard');
+});
