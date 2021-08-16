@@ -32,8 +32,8 @@
 
 
 </head>
-<body>    
- <div id="app">
+<body id="page-top">    
+
 
     <!----------------------------- navbar ------------------------------>
           @include('layouts.navbar');
@@ -43,13 +43,7 @@
             </main>
     <!------------------------------ Footer ------------------------------------->
     @include('layouts.footer');
-     
-        </div>
-
-
-
-
-
+    
 
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>

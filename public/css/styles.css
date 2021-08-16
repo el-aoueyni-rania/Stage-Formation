@@ -11362,7 +11362,7 @@ p {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border: none;
-    background-color: transparent;
+    background-color: #212529;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -23455,4 +23455,18 @@ body {
   width: 20px !important;
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
+}
+.k
+{
+  width : 70px ;
+  height : 70px;
+  border: solid black;
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.ft{
+  font-style: italic;
+  color: black;
 }
