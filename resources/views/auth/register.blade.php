@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<br><br><br><br><br><br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -64,7 +65,7 @@
                             <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('role') }}</label>
 
                             <div class="col-md-6">
-                                <input id="role" type="number" class="form-control" name="role" value="{{ old('role') }}" required autocomplete="role">
+                                <input id="role" type="number" class="form-control @error('role') is-invalid @enderror" name="role" value="{{ old('role') }}" required autocomplete="role">
 
                                 @error('role')
                                     <span class="invalid-feedback" role="alert">
