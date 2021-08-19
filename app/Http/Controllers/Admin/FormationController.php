@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Formation;
 use Illuminate\Http\Request;
 
 class FormationController extends Controller
@@ -14,7 +15,7 @@ class FormationController extends Controller
      */
     public function index()
     {
-        return view('admin.formation.index');
+        return view('admin.formation.index' , ['formations' => Formation::paginate(5)]);
     }
 
     /**

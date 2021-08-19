@@ -19,7 +19,7 @@
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav text-uppercase ms-auto py-2 py-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                    <a class="nav-link collapsed" href="{{ route('dashboard') }}" >
                         <div class="sb-nav-link-icon"></div>
                         <i class="fas fa-home"></i>
                     </a>
@@ -43,13 +43,13 @@
                 </li>          
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                    <a class="nav-link collapsed" href="#" >
                         <div class="sb-nav-link-icon"></div>
                         messages
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                    <a class="nav-link collapsed" href="#" >
                         <div class="sb-nav-link-icon"></div>
                         Users
                     </a>

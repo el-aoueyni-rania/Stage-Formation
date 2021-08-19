@@ -24,7 +24,10 @@ Route::get('/admin-dashboard', function(){
     return view('admin.dashboard');
 })->middleware('auth' , 'role');
 
+Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 Route::get('/premiereAAd', 'HomeController@premiereAAd')->name('premiereAAd');
 Route::resource('formations', 'Admin\FormationController');
+
+
 
 
