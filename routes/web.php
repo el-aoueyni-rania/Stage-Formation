@@ -30,6 +30,7 @@ Route::get('/premiere', 'HomeController@premiere')->name('layouts.premiere');
 
 
 Route::resource('formations', 'Admin\FormationController');
+
 Route::resource('formations2', 'Utilisateur\FormationController2');
 
 

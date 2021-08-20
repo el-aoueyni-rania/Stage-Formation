@@ -25,7 +25,7 @@ class FormationController2 extends Controller
      */
     public function create()
     {
-        //
+        return view('utilisateur.formation.create');
     }
 
     /**
@@ -36,7 +36,9 @@ class FormationController2 extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate($this->validationRules());
+        $formation2 = Formation::create($validatedData);
+        return redirect()->route('formations2.index' , $formation2)->with('storeFormation' , 'Formation has been added successfuly !!!');
     }
 
     /**
@@ -45,7 +47,7 @@ class FormationController2 extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Formation $formation2)
     {
         //
     }
@@ -82,5 +84,15 @@ class FormationController2 extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    private function validationRules()
+    {
+        return [
+            'user_id' =>'required',
+            'titre' =>'required|min:2',
+            'contenu' =>'required|min:4',
+            
+        ];
     }
 }
