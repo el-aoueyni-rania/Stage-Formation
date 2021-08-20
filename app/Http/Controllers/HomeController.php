@@ -35,6 +35,10 @@ class HomeController extends Controller
     {
         return view('admin.premiereAAd');
     }
+    public function premiere()
+    {
+        return view('layouts.premiere');
+    }
     public function dashboard()
     {
         return view('admin.dashboard');

@@ -26,7 +26,11 @@ Route::get('/admin-dashboard', function(){
 
 Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
 Route::get('/premiereAAd', 'HomeController@premiereAAd')->name('premiereAAd');
+Route::get('/premiere', 'HomeController@premiere')->name('layouts.premiere');
+
+
 Route::resource('formations', 'Admin\FormationController');
+Route::resource('formations2', 'Utilisateur\FormationController2');
 
 
 
