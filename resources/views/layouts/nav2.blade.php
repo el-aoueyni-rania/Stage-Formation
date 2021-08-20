@@ -8,7 +8,7 @@
             </a>
             <div class="collapse" id="premiere" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                 <nav class="sb-sidenav-menu-nested nav bg-light">
-                    <a class="nav-link" href="/formations">الرياضيات</a>
+                    <a class="nav-link" href="/formations2">الرياضيات</a>
                     <a class="nav-link" href="#">القراءة</a>
                     <a class="nav-link" href="#"> قواعد اللغة العربية</a>
                     <a class="nav-link" href="#">الإيقاظ العلمي</a>

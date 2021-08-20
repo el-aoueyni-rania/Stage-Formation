@@ -1,19 +1,16 @@
 @extends('layouts.admin')
 
 @section('main')
-<br><br><br><br>
-
 <main>
-    <div class="row">
+  <br><br> <br><br><br><br> <br><br>
+    <div class="row">     
+ 
         <div class="col-lg-3">
-            <br><br><br><br>
-            @include('layouts.nav') 
-            </nav>       
+            @include('layouts.nav')       
         </div>
-       
         <div class="col-lg-9">
-            <br><br> <br><br><br><br>
             <div class="row">
+              <h2>Formation List</h2>
                 <table class="table table-hover">
                     <thead>
                       <tr>
