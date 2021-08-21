@@ -43,13 +43,13 @@
                 </li>          
 
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" >
+                    <a class="nav-link collapsed" href="/messages" >
                         <div class="sb-nav-link-icon"></div>
                         messages
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link collapsed" href="#" >
+                    <a class="nav-link collapsed" href="/utilisateurs" >
                         <div class="sb-nav-link-icon"></div>
                         Users
                     </a>
