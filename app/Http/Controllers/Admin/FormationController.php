@@ -25,7 +25,7 @@ class FormationController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.formation.create');
     }
 
     /**
@@ -36,7 +36,9 @@ class FormationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate($this->validationRules());
+        $formation = Formation::create($validatedData);
+        return redirect()->route('formations.show' , $formation)->with('storeFormation' , 'Formation has been added successfuly !!!');
     }
 
     /**
@@ -45,9 +47,9 @@ class FormationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Formation $formation)
     {
-        //
+        return view('admin.formation.show' ,  ['formation' => $formation]);
     }
 
     /**
@@ -56,9 +58,9 @@ class FormationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Formation $formation)
     {
-        //
+        return view('admin.formation.edit' ,  ['formation' => $formation]);
     }
 
     /**
@@ -68,9 +70,11 @@ class FormationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Formation $formation)
     {
-        //
+        $validatedData = $request->validate($this->validationRules());
+        $formation->update($validatedData);
+        return redirect()->route('formations.show' , $formation)->with('updateFormation' , 'Formation has been updated successfuly !!!');
     }
 
     /**
@@ -79,8 +83,19 @@ class FormationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Formation $formation)
     {
-        //
+        $formation->delete();
+        return redirect()->route('formations.index')->with('deleteFormation' , 'Formation has been deleted !!!');
+    }
+
+    private function validationRules()
+    {
+        return [
+            'user_id' =>'required',
+            'titre' =>'required|min:2',
+            'contenu' =>'required|min:4',
+            
+        ];
     }
 }

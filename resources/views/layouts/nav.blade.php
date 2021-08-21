@@ -1,7 +1,8 @@
 <nav class="sb-sidenav accordion " id="sidenavAccordion">
     <div class="sb-sidenav-menu">
         <div class="nav">
-            <div class="sb-sidenav-menu-heading"><br><br></div>
+            <br><br><br><br>
+            <a href="{{ route('formations.create' ) }}" class="nav-link collapsed"> <i class="fas fa-plus"></i> Add new Formation</a>
             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#premiere" aria-expanded="false" aria-controls="premiere">
                 Première année
                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>

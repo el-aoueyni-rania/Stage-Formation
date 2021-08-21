@@ -4,7 +4,7 @@
             {{ config('app.name', 'Laravel') }}
         </a> --}}
 
-       <img class="k" src="assets/img/centre.jfif"  />
+       <img class="k" src="{{ asset('assets/img/centre.jfif') }}"  />
        <h6  style="padding-left : 5px" class="ft" >
         <a  class="navbar-brand text-white " href="{{ url('/') }}">
        Centre It Plus
