@@ -4,7 +4,6 @@
 <main>
   <br><br><br><br>
   <div class="row">     
- 
     <div class="col-lg-3">
         @include('layouts.nav2')       
     </div>
@@ -13,7 +12,11 @@
       <div class="row">  
         <h2>Formation List</h2>
         @foreach ($formations2 as $key => $formation)
-          <label class="titr"> <a href="#" class="btn btn-primary" title=" show formation : {{ $formation ->id }} "><i class="fas fa-info-circle"></i></a>  Formation {{ $key }} : {{ $formation -> titre}}  </label>  
+          <label class="titr"> 
+            <a href="{{ route('formations2.show' , ['formation2' =>$formation ->id]) }}" class="btn btn-primary" title=" show formation : {{ $formation ->id }} ">
+            <i class="fas fa-info-circle"></i>
+            </a>  Formation {{ $key }} : {{ $formation -> titre}}  
+          </label>  
         
         @endforeach
         <br><br>

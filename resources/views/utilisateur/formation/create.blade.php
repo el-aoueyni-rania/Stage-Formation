@@ -8,8 +8,7 @@
         </legend>
         <form action="{{ route('formations2.store') }}" method="post">
         @include('utilisateur.formation.form')
-        </form>
-     
+        </form> 
     </fieldset>
 </main>
 @endsection
