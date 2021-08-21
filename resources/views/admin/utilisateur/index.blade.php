@@ -1,0 +1,59 @@
+@extends('layouts.admin')
+
+@section('main')
+<main>
+  <br><br><br><br>
+    <div class="row">   
+        <div class="col-lg-3">
+          @include('layouts.nav')       
+        </div>
+        <div class="col-lg-9">
+          <br><br><br><br>
+            <div class="row">
+                @if (session('deleteUtilisateur'))
+              <div class="alert alert-dismissible alert-success fade show" role="alert">
+                {{ session('deleteUtilisateur') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+          @endif 
+              <h2>Utilisateur List</h2>
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"> Name </th>
+                        <th scope="col"> Email</th>
+                        <th scope="col"> PassWord</th>
+                        <th scope="col"> Operation</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($utilisateurs as $key => $utilisateur)
+                        <tr>
+                            <th scope="row">{{ $key }}</th>
+                            <td>{{ $utilisateur -> name }} </td>
+                            <td>{{ $utilisateur -> email}} </td>
+                            <td>{{ $utilisateur -> password}} </td>
+                            <td>
+                                <a href="# "  class="btn btn-info" title=" show formation : {{ $utilisateur ->id }} "><i class="fas fa-clipboard-list"></i></a>
+                                  <a href="#" class="btn btn-warning" title=" edit formation : {{ $utilisateur ->id }} "><i class="fas fa-edit"></i></a>
+                                  <a href="#" class="btn btn-danger" title=" delete utilisateur : {{ $utilisateur ->id }} " 
+                                    onclick="event.preventDefault(); document.querySelector('#delete-utilisateur-form').submit()">
+                                    <i class="fas fa-trash-alt"></i></a>
+                                   <form action="{{ route('utilisateurs.destroy' , ['utilisateur' =>$utilisateur ->id]) }}" method="post" id="delete-utilisateur-form"> @csrf @method('DELETE')</form>
+                                </td>
+                          </tr>
+                        @endforeach
+                    </tbody>                
+                  </table>
+                  <div class="mx-auto" style="width: 200px ;">
+                    {{ $utilisateurs ->links()}} 
+                  </div>            
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+</main>
+@endsection
