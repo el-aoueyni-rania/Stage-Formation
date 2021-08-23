@@ -10,7 +10,9 @@
         <div class="col-lg-9">
           <br><br><br><br>
             <div class="row">
-                @if (session('deleteUtilisateur'))
+
+              <h2>Utilisateur List</h2>
+              @if (session('deleteUtilisateur'))
               <div class="alert alert-dismissible alert-success fade show" role="alert">
                 {{ session('deleteUtilisateur') }}
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -18,7 +20,22 @@
                 </button>
               </div>
           @endif 
-              <h2>Utilisateur List</h2>
+          @if (session('storeUtilisateur'))
+    <div class="alert alert-dismissible alert-success fade show" role="alert">
+      {{ session('storeUtilisateur') }}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+@endif
+@if (session('updateUtilisateur'))
+    <div class="alert alert-dismissible alert-success fade show" role="alert">
+      {{ session('updateUtilisateur') }}
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+@endif
                 <table class="table table-hover">
                     <thead>
                       <tr>
@@ -26,6 +43,7 @@
                         <th scope="col"> Name </th>
                         <th scope="col"> Email</th>
                         <th scope="col"> PassWord</th>
+                        <th scope="col"> Role</th>
                         <th scope="col"> Operation</th>
                       </tr>
                     </thead>
@@ -36,9 +54,9 @@
                             <td>{{ $utilisateur -> name }} </td>
                             <td>{{ $utilisateur -> email}} </td>
                             <td>{{ $utilisateur -> password}} </td>
+                            <td>{{ $utilisateur -> role}} </td>
                             <td>
-                                <a href="# "  class="btn btn-info" title=" show formation : {{ $utilisateur ->id }} "><i class="fas fa-clipboard-list"></i></a>
-                                  <a href="#" class="btn btn-warning" title=" edit formation : {{ $utilisateur ->id }} "><i class="fas fa-edit"></i></a>
+                                  <a href="{{ route('utilisateurs.edit' , ['utilisateur' =>$utilisateur ->id]) }}" class="btn btn-warning" title=" edit utilisateur : {{ $utilisateur ->id }} "><i class="fas fa-edit"></i></a>
                                   <a href="#" class="btn btn-danger" title=" delete utilisateur : {{ $utilisateur ->id }} " 
                                     onclick="event.preventDefault(); document.querySelector('#delete-utilisateur-form').submit()">
                                     <i class="fas fa-trash-alt"></i></a>

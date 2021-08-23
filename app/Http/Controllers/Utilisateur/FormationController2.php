@@ -49,7 +49,7 @@ class FormationController2 extends Controller
      */
     public function show(Formation $formation2)
     {
-        return view('utilisateur.formation.show' ,  ['formation2' => $formation2]);
+        //
     }
 
     /**
