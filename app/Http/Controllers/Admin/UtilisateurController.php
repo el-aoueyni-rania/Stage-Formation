@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class UtilisateurController extends Controller
 {
@@ -25,7 +26,7 @@ class UtilisateurController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.utilisateur.create');
     }
 
     /**
@@ -36,7 +37,13 @@ class UtilisateurController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $utilisateur = new User ; 
+        $utilisateur->name = $request->name;
+        $utilisateur->email = $request->email;
+        $utilisateur->password = Hash::make($request['password']);
+        $utilisateur->role = $request->role;
+        $utilisateur->save();
+        return redirect()->route('utilisateurs.index' , $utilisateur)->with('storeUtilisateur' , 'User has been added successfuly !!!');
     }
 
     /**
@@ -56,9 +63,9 @@ class UtilisateurController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(User $utilisateur)
     {
-        //
+        return view('admin.utilisateur.edit' ,  ['utilisateur' => $utilisateur]);
     }
 
     /**
@@ -68,9 +75,11 @@ class UtilisateurController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, User $utilisateur)
     {
-        //
+        $validatedData = $request->validate($this->validationRules());
+        $utilisateur->update($validatedData);
+        return redirect()->route('utilisateurs.index' , $utilisateur)->with('updateUtilisateur' , 'User has been updated successfuly !!!');
     }
 
     /**
@@ -83,5 +92,15 @@ class UtilisateurController extends Controller
     {
         $utilisateur->delete();
         return redirect()->route('utilisateurs.index')->with('deleteUtilisateur' , 'Utilisateur has been deleted !!!');
+    }
+    private function validationRules()
+    {
+        return [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' =>['required', 'string', 'min:8', 'confirmed'],
+            'role' =>  ['required', 'numeric', 'min:0', 'max:1'],
+            
+        ];
     }
 }

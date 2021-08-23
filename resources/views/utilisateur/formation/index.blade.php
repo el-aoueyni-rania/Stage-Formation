@@ -13,7 +13,7 @@
         <h2>Formation List</h2>
         @foreach ($formations2 as $key => $formation)
           <label class="titr"> 
-            <a href="{{ route('formations2.show' , ['formation2' =>$formation ->id]) }}" class="btn btn-primary" title=" show formation : {{ $formation ->id }} ">
+            <a href="#" class="btn btn-primary" title=" show formation : {{ $formation ->id }} ">
             <i class="fas fa-info-circle"></i>
             </a>  Formation {{ $key }} : {{ $formation -> titre}}  
           </label>  
