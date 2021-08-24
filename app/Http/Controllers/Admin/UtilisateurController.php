@@ -96,10 +96,10 @@ class UtilisateurController extends Controller
     private function validationRules()
     {
         return [
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255'],
-            'password' =>['required', 'string', 'min:8', 'confirmed'],
-            'role' =>  ['required', 'numeric', 'min:0', 'max:1'],
+            'name' => 'required',
+            'email' => 'required',
+            'password' =>'required|min:8', 
+            'role' =>  'required|integer|between:0,1',
             
         ];
     }
