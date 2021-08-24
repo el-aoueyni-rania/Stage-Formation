@@ -25,7 +25,7 @@ class MessageController extends Controller
      */
     public function create()
     {
-        //
+        return view('welcome');
     }
 
     /**
@@ -36,7 +36,9 @@ class MessageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate($this->validationRules());
+        $message = Message::create($validatedData);
+        return redirect()->route('messages.create' , $message)->with('storeMessage' , 'Message submission successfuly !!!');
     }
 
     /**
@@ -82,5 +84,15 @@ class MessageController extends Controller
     public function destroy($id)
     {
         //
+    }
+    private function validationRules()
+    {
+        return [
+            'name' =>'required',
+            'email' =>'required',
+            'phone' =>'required|min:8',
+            'message' =>'required|max:255',
+            
+        ];
     }
 }
