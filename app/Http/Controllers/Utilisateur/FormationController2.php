@@ -47,7 +47,7 @@ class FormationController2 extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Formation $formation2)
+    public function show($id)
     {
         //
     }

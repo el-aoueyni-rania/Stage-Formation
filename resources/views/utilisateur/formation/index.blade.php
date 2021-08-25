@@ -12,12 +12,10 @@
       <div class="row">  
         <h2>Formation List</h2>
         @foreach ($formations2 as $key => $formation)
-          <label class="titr"> 
-            <a href="#" class="btn btn-primary" title=" show formation : {{ $formation ->id }} ">
-            <i class="fas fa-info-circle"></i>
-            </a>  Formation {{ $key }} : {{ $formation -> titre}}  
-          </label>  
-        
+          <label class="titr">Formation {{ $key }} : {{ $formation -> titre}}  </label> 
+          <div >
+            {{ $formation -> contenu}} 
+          </div>  
         @endforeach
         <br><br>
         <div class="mx-auto" style="width: 200px ;">
