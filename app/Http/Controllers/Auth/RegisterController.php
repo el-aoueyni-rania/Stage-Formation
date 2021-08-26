@@ -21,15 +21,6 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-    */
-    public function index()
-    {
-        return view('auth.login');
-    }
     use RegistersUsers;
 
     /**
@@ -79,6 +70,5 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'role' => $data['role'],
         ]);
-        return redirect()->route('logins.index');
     }
 }
