@@ -18,7 +18,7 @@
                     <div class="card h-55">
                         <a href="#!"><img class="card-img-top"  height="150" src="assets/img/math.jpg" alt="..." /></a>
                         <div class="card-body">
-                            <h4 class="card-title"><a href="#">الرياضيات</a></h4>
+                            <h4 class="card-title"><a href="/formations">الرياضيات</a></h4>
                         </div>                       
                     </div>
                 </div>
