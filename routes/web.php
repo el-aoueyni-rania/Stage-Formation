@@ -11,32 +11,25 @@
 |
 */
 
-
 Route::get('/','HomeController@welcome') ;
+
+
+
 Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/admin-dashboard', function(){
+    return view('admin.dashboard');
+})->middleware('auth' , 'role');
 
-Route::middleware('auth')->group(function() {
-    Route::get('/home', 'HomeController@index')->name('home');
-    Route::resource('formations2', 'Utilisateur\FormationController2');
-    Route::get('/premiere', 'HomeController@premiere')->name('layouts.premiere');
+Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+Route::get('/premiereAAd', 'HomeController@premiereAAd')->name('premiereAAd');
+Route::get('/premiere', 'HomeController@premiere')->name('layouts.premiere');
 
+Route::resource('formations2', 'Utilisateur\FormationController2');
+Route::resource('formations', 'Admin\FormationController');
+Route::resource('messages', 'Admin\MessageController');
+Route::resource('utilisateurs', 'Admin\UtilisateurController');
 
-    Route::middleware('role')->group(function() {
-
-    Route::get('/admin-dashboard', function(){
-        return view('admin.dashboard');
-    })->name('admin.dashboard');
-    
-    Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
-    Route::get('/premiereAAd', 'HomeController@premiereAAd')->name('premiereAAd');
-    Route::resource('formations', 'Admin\FormationController');
-    Route::resource('messages', 'Admin\MessageController');
-    Route::resource('utilisateurs', 'Admin\UtilisateurController');
-
-    });
-
-
-});
 
