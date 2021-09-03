@@ -29,9 +29,10 @@
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><i class="fas fa-utensils"></i>  {{ $formation ->user_id}}</li>
-          <li class="list-group-item"><i class="fas fa-list-alt"></i> {{ $formation ->titre}}</li>
-          <li class="list-group-item"><i class="fas fa-apple-alt"></i> {{ $formation ->contenu}} </li>
+          <li class="list-group-item"><i class="fas fa-user"></i>  {{ $formation ->user_id}}</li>
+          <li class="list-group-item"> {{ $formation ->titre}}</li>
+          <li class="list-group-item">
+            {{ $formation ->contenu}} </li>
           </ul>
         <hr>
         <a href="{{ route('formations.edit' , ['formation' =>$formation ->id]) }}" class="btn btn-warning"><i class="fas fa-edit"></i></a>
