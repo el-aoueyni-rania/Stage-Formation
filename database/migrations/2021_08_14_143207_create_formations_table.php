@@ -17,7 +17,7 @@ class CreateFormationsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->string('titre',100);
-            $table->string('contenu');
+            $table->longText('contenu');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('restrict')->onUpdate('restrict');
         });
