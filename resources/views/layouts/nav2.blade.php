@@ -106,5 +106,145 @@
                     <a class="nav-link" href="#"> اللغة الانجليزية</a>
                 </nav>
             </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#septieme" aria-expanded="false" aria-controls="sixieme">
+                Septième année
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="septieme" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="#">الرياضيات</a>
+                    <a class="nav-link" href="#">القراءة</a>
+                    <a class="nav-link" href="#"> قواعد اللغة العربية</a>
+                    <a class="nav-link" href="#">الإيقاظ العلمي</a>
+                    <a class="nav-link" href="#"> علوم فيزيائية</a>
+                    <a class="nav-link" href="#">التربية الإسلامية</a>
+                    <a class="nav-link" href="#">الإنتاج الكتابي</a>
+                    <a class="nav-link" href="#"> Français</a>
+                    <a class="nav-link" href="#">التربية التكنولجية</a>
+                    <a class="nav-link" href="#">المواد الاجتماعية</a>
+                    <a class="nav-link" href="#"> Anglais</a>
+                    <a class="nav-link" href="#">  Informatique</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#huitieme" aria-expanded="false" aria-controls="sixieme">
+                Huitième année
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="huitieme" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="#">الرياضيات</a>
+                    <a class="nav-link" href="#">القراءة</a>
+                    <a class="nav-link" href="#"> قواعد اللغة العربية</a>
+                    <a class="nav-link" href="#">الإيقاظ العلمي</a>
+                    <a class="nav-link" href="#"> علوم فيزيائية</a>
+                    <a class="nav-link" href="#">التربية الإسلامية</a>
+                    <a class="nav-link" href="#">الإنتاج الكتابي</a>
+                    <a class="nav-link" href="#"> Français</a>
+                    <a class="nav-link" href="#">التربية التكنولجية</a>
+                    <a class="nav-link" href="#">المواد الاجتماعية</a>
+                    <a class="nav-link" href="#"> Anglais</a>
+                    <a class="nav-link" href="#">  Informatique</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#neuvieme" aria-expanded="false" aria-controls="sixieme">
+                Neuvième année
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="neuvieme" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="#">الرياضيات</a>
+                    <a class="nav-link" href="#">القراءة</a>
+                    <a class="nav-link" href="#"> قواعد اللغة العربية</a>
+                    <a class="nav-link" href="#">الإيقاظ العلمي</a>
+                    <a class="nav-link" href="#"> علوم فيزيائية</a>
+                    <a class="nav-link" href="#">التربية الإسلامية</a>
+                    <a class="nav-link" href="#">الإنتاج الكتابي</a>
+                    <a class="nav-link" href="#"> Français</a>
+                    <a class="nav-link" href="#">التربية التكنولجية</a>
+                    <a class="nav-link" href="#">المواد الاجتماعية</a>
+                    <a class="nav-link" href="#"> Anglais</a>
+                    <a class="nav-link" href="#">  Informatique</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#prem" aria-expanded="false" aria-controls="sixieme">
+                Première année secondaire
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="prem" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="#">الرياضيات</a>
+                    <a class="nav-link" href="#">القراءة</a>
+                    <a class="nav-link" href="#"> قواعد اللغة العربية</a>
+                    <a class="nav-link" href="#">الإيقاظ العلمي</a>
+                    <a class="nav-link" href="#"> علوم فيزيائية</a>
+                    <a class="nav-link" href="#">التربية الإسلامية</a>
+                    <a class="nav-link" href="#">الإنتاج الكتابي</a>
+                    <a class="nav-link" href="#"> Français</a>
+                    <a class="nav-link" href="#">التربية التكنولجية</a>
+                    <a class="nav-link" href="#">المواد الاجتماعية</a>
+                    <a class="nav-link" href="#"> Anglais</a>
+                    <a class="nav-link" href="#">  Informatique</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#deux" aria-expanded="false" aria-controls="sixieme">
+                Deuxième année secondaire
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="deux" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="#">الرياضيات</a>
+                    <a class="nav-link" href="#">القراءة</a>
+                    <a class="nav-link" href="#"> قواعد اللغة العربية</a>
+                    <a class="nav-link" href="#">الإيقاظ العلمي</a>
+                    <a class="nav-link" href="#"> علوم فيزيائية</a>
+                    <a class="nav-link" href="#">التربية الإسلامية</a>
+                    <a class="nav-link" href="#">الإنتاج الكتابي</a>
+                    <a class="nav-link" href="#"> Français</a>
+                    <a class="nav-link" href="#">التربية التكنولجية</a>
+                    <a class="nav-link" href="#">المواد الاجتماعية</a>
+                    <a class="nav-link" href="#"> Anglais</a>
+                    <a class="nav-link" href="#">  Informatique</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#trois" aria-expanded="false" aria-controls="sixieme">
+                Troisième année secondaire
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="trois" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="#">الرياضيات</a>
+                    <a class="nav-link" href="#">القراءة</a>
+                    <a class="nav-link" href="#"> قواعد اللغة العربية</a>
+                    <a class="nav-link" href="#">الإيقاظ العلمي</a>
+                    <a class="nav-link" href="#"> علوم فيزيائية</a>
+                    <a class="nav-link" href="#">التربية الإسلامية</a>
+                    <a class="nav-link" href="#">الإنتاج الكتابي</a>
+                    <a class="nav-link" href="#"> Français</a>
+                    <a class="nav-link" href="#">التربية التكنولجية</a>
+                    <a class="nav-link" href="#">المواد الاجتماعية</a>
+                    <a class="nav-link" href="#"> Anglais</a>
+                    <a class="nav-link" href="#">  Informatique</a>
+                </nav>
+            </div>
+            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#baccalaureat" aria-expanded="false" aria-controls="sixieme">
+                Baccalauréat
+                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+            </a>
+            <div class="collapse" id="baccalaureat" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                <nav class="sb-sidenav-menu-nested nav">
+                    <a class="nav-link" href="#">الرياضيات</a>
+                    <a class="nav-link" href="#">القراءة</a>
+                    <a class="nav-link" href="#"> قواعد اللغة العربية</a>
+                    <a class="nav-link" href="#">الإيقاظ العلمي</a>
+                    <a class="nav-link" href="#"> علوم فيزيائية</a>
+                    <a class="nav-link" href="#">التربية الإسلامية</a>
+                    <a class="nav-link" href="#">الإنتاج الكتابي</a>
+                    <a class="nav-link" href="#"> Français</a>
+                    <a class="nav-link" href="#">التربية التكنولجية</a>
+                    <a class="nav-link" href="#">المواد الاجتماعية</a>
+                    <a class="nav-link" href="#"> Anglais</a>
+                    <a class="nav-link" href="#">  Informatique</a>
+                </nav>
+            </div>
     </div>
 </nav>    

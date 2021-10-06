@@ -12,60 +12,40 @@
        
         <div class="col-lg-9">
             <br><br> <br><br><br><br><br><br>
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+            </div>
+
+
             <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-55">
-                        <a href="#!"><img class="card-img-top"  height="150" src="assets/img/b5.jfif" alt="..." /></a>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="{{route('premiereAAd')}}">Première Année</a></h4>
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-55">
-                        <a href="#!"><img class="card-img-top" height="150" src="assets/img/b2.jpg"  alt="..." /></a>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="#!">Deuxième Année</a></h4>
-                        </div>                      
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-55">
-                        <a href="#!"><img class="card-img-top"  height="150" src="assets/img/b44.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="#!">Troisième Année</a></h4>                         
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-55">
-                        <a href="#!"><img class="card-img-top"  height="150" src="assets/img/bbb.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="#!">Quatrième Année</a></h4>                           
+                <!-- Area Chart -->
+                <div class="row">
+                    <div class="col-xl-10">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-area me-1"></i>
+                                View
+                            </div>
+                            <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-55">
-                        <a href="#!"><img class="card-img-top"  height="150" src="assets/img/bf.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="#!">Sinquième Année</a></h4>                        
-                        </div>                       
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-55">
-                        <a href="#!"><img class="card-img-top"  height="150" src="assets/img/b66.jpg" alt="..." /></a>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="#!">Sixième Année</a></h4>                          
+                    <div class="col-xl-10">
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-chart-bar me-1"></i>
+                                Add
+                            </div>
+                            <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Content Row --> 
     <br><br><br><br><br><br><br><br>
 </main>
-
+ <!-- End of Main Content -->
     
 @endsection
