@@ -11,7 +11,7 @@
           <br><br><br><br>
             <div class="row">
 
-              <h2>Utilisateur List</h2>
+              <h1 style="text-align: center">Users List</h1>
               @if (session('deleteUtilisateur'))
               <div class="alert alert-dismissible alert-success fade show" role="alert">
                 {{ session('deleteUtilisateur') }}
@@ -36,6 +36,15 @@
       </button>
     </div>
 @endif
+<br><br><br>
+<div class="input-group rounded">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
+  aria-describedby="search-addon" />
+  <span class="input-group-text border-0" id="search-addon">
+    <i class="fas fa-search"></i>
+  </span>
+</div>
+<br><br>
                 <table class="table table-hover">
                     <thead>
                       <tr>

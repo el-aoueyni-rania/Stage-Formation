@@ -10,7 +10,8 @@
         <div class="col-lg-9">
           <br><br><br><br>
             <div class="row"> 
-              <h2>Message List</h2>
+              <h1 style="text-align: center">Messages List</h1>
+              <br><br><br>
                 <table class="table table-hover">
                     <thead>
                       <tr>

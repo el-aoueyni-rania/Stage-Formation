@@ -16,7 +16,7 @@ class UtilisateurController extends Controller
      */
     public function index()
     {
-        return view('admin.utilisateur.index' , ['utilisateurs' => User::paginate(5)]);
+        return view('admin.utilisateur.index' , ['utilisateurs' => User::paginate(15)]);
     }
 
     /**
