@@ -15,7 +15,7 @@ class FormationController extends Controller
      */
     public function index()
     {
-        return view('admin.formation.index' , ['formations' => Formation::paginate(5)]);
+        return view('admin.formation.index' , ['formations' => Formation::paginate(9)]);
     }
 
     /**

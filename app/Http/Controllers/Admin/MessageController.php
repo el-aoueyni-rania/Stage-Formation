@@ -15,7 +15,7 @@ class MessageController extends Controller
      */
     public function index()
     {
-        return view('admin.message.index' , ['messages' => Message::paginate(5)]);
+        return view('admin.message.index' , ['messages' => Message::paginate(15)]);
     }
 
     /**
