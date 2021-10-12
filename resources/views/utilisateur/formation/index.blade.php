@@ -10,7 +10,7 @@
     <div class="col-lg-9">
       <br><br><br><br>
       <div class="row">  
-        <h1 style="text-align: center">Formation List</h1>
+        <h1 style="text-align: center">Liste Des Formations</h1>
         <br><br>
         @foreach ($formations2 as $key => $formation)
           <label class="titr">Titre {{ $key }} : {{ $formation -> titre}}  </label> 

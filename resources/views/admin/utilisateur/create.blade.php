@@ -4,7 +4,7 @@
     <br><br><br><br><br><br><br><br>
     <fieldset>
         <legend>
-            <i class="fas fa-plus"></i> Add new User 
+            Ajouter un utilisateur :
         </legend>
         <form action="{{ route('utilisateurs.store') }}" method="post">
         @include('admin.utilisateur.form')

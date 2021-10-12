@@ -25,7 +25,7 @@
       </button>
     </div>
 @endif
-    <h3> <i class="fas fa-clipboard-list"></i> Details About Formation : {{ $formation ->id}} </h3>
+    <h3>Détails De Formation : {{ $formation ->id}} </h3>
     <div class="card" style="width: 18rem;">
       <div class="card-body">
         <ul class="list-group list-group-flush">

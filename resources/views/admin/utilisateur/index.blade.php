@@ -11,7 +11,7 @@
           <br><br><br><br>
             <div class="row">
 
-              <h1 style="text-align: center">Users List</h1>
+              <h1 style="text-align: center">Liste Des Utilisateurs</h1>
               @if (session('deleteUtilisateur'))
               <div class="alert alert-dismissible alert-success fade show" role="alert">
                 {{ session('deleteUtilisateur') }}
@@ -44,6 +44,9 @@
     <i class="fas fa-search"></i>
   </span>
 </div>
+<button>
+  <a href="{{ route('utilisateurs.create' ) }}" class="nav-link collapsed"> <i class="fas fa-plus"></i> Ajouter un utilisateur</a>
+</button>
 <br><br>
                 <table class="table table-hover">
                     <thead>
@@ -51,7 +54,6 @@
                         <th scope="col">#</th>
                         <th scope="col"> Name </th>
                         <th scope="col"> Email</th>
-                        <th scope="col"> PassWord</th>
                         <th scope="col"> Role</th>
                         <th scope="col"> Operation</th>
                       </tr>
@@ -62,7 +64,6 @@
                             <th scope="row">{{ $key }}</th>
                             <td>{{ $utilisateur -> name }} </td>
                             <td>{{ $utilisateur -> email}} </td>
-                            <td>{{ $utilisateur -> password}} </td>
                             <td>{{ $utilisateur -> role}} </td>
                             <td>
                                   <a href="{{ route('utilisateurs.edit' , ['utilisateur' =>$utilisateur ->id]) }}" class="btn btn-warning" title=" edit utilisateur : {{ $utilisateur ->id }} "><i class="fas fa-edit"></i></a>

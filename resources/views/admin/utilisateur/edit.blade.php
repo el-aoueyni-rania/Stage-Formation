@@ -4,7 +4,7 @@
     <br><br><br><br><br><br><br><br>
     <fieldset>
         <legend>
-            <i class="fas fa-edit"></i> Edit User : {{ $utilisateur ->id}}
+            <i class="fas fa-edit"></i> Modifier un utilisateur : {{ $utilisateur ->id}}
         </legend>
         <form action="{{ route('utilisateurs.update' ,  ['utilisateur' =>$utilisateur ->id]) }}" method="post">
             @method('PUT')
