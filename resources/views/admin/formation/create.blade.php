@@ -4,7 +4,7 @@
     <br><br><br><br><br><br><br><br>
     <fieldset>
         <legend>
-            <i class="fas fa-plus"></i> Add new formation 
+            Ajouter une formation :
         </legend>
         <form action="{{ route('formations.store') }}" method="post">
         @include('admin.formation.form')

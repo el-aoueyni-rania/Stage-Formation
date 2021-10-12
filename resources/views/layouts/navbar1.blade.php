@@ -51,7 +51,7 @@
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="/utilisateurs" >
                         <div class="sb-nav-link-icon"></div>
-                        Users
+                        Utilisateurs
                     </a>
                 </li>
             </ul>

@@ -18,7 +18,11 @@
                 </button>
               </div>
           @endif  
-              <h2>Formation List</h2>
+              <h1 style="text-align: center">Liste Des Formations</h1>
+              <br><br>
+              <button>
+                <a href="{{ route('formations.create' ) }}" class="nav-link collapsed" style="color: black"> <i class="fas fa-plus"></i> Ajouter Une Formation</a>
+              </button>
                 <table class="table table-hover">
                     <thead>
                       <tr>
@@ -35,7 +39,7 @@
                             <td>{{ $formation -> user_id }} </td>
                             <td>{{ $formation -> titre}} </td>
                             <td>
-                              <a href="{{ route('formations.show' , ['formation' =>$formation ->id]) }}  "  class="btn btn-info" title=" show formation : {{ $formation ->id }} "><i class="fas fa-clipboard-list"></i></a>
+                              <a href="{{ route('formations.show' , ['formation' =>$formation ->id]) }}  "  class="btn btn-info" title=" show formation : {{ $formation ->id }} "><i class="fas fa-info-circle"></i></a>
                                 <a href="{{ route('formations.edit' , ['formation' =>$formation ->id]) }}" class="btn btn-warning" title=" edit formation : {{ $formation ->id }} "><i class="fas fa-edit"></i></a>
                                 <a href="#" class="btn btn-danger" title=" delete formation : {{ $formation ->id }} " 
                                   onclick="event.preventDefault(); document.querySelector('#delete-formation-form').submit()">
