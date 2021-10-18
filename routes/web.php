@@ -31,5 +31,5 @@ Route::resource('formations2', 'Utilisateur\FormationController2');
 Route::resource('formations', 'Admin\FormationController');
 Route::resource('messages', 'Admin\MessageController');
 Route::resource('utilisateurs', 'Admin\UtilisateurController');
-
+Route::resource('registers', 'Auth\RegisterController');
 
