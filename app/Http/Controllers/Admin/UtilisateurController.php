@@ -77,7 +77,7 @@ class UtilisateurController extends Controller
      */
     public function update(Request $request, User $utilisateur)
     {
-        $validatedData = $request->validate($this->validationRules());
+        $validatedData = $request->validate($this->validationRules2());
         $utilisateur->update($validatedData);
         return redirect()->route('utilisateurs.index' , $utilisateur)->with('updateUtilisateur' , 'User has been updated successfuly !!!');
     }
@@ -99,6 +99,15 @@ class UtilisateurController extends Controller
             'name' => 'required',
             'email' => 'required',
             'password' =>'required|min:8', 
+            'role' =>  'required|integer|between:0,1',
+            
+        ];
+    }
+    private function validationRules2()
+    {
+        return [
+            'name' => 'required',
+            'email' => 'required', 
             'role' =>  'required|integer|between:0,1',
             
         ];
