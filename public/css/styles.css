@@ -23484,3 +23484,10 @@ body {
  margin-left: 600px;
 }
 
+.g1{
+  display: grid;
+  grid-template-columns: 5fr 5fr ;
+  padding: 10px;
+}
+
+
