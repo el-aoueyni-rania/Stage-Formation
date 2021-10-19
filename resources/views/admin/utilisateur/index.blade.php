@@ -37,22 +37,25 @@
     </div>
 @endif
 <br><br><br>
-<div class="input-group rounded">
-  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-  aria-describedby="search-addon" />
-  <span class="input-group-text border-0" id="search-addon">
-    <i class="fas fa-search"></i>
-  </span>
+<div class="g1">
+  <div class="form-group mr-1 mb-1">
+    <button class="btn btn-info">
+      <a href="{{ route('utilisateurs.create' ) }}" class="nav-link collapsed" style="color: black"> Ajouter un utilisateur</a>
+    </button>
+    </div>
+    <div >
+      @include('partials.search')
+    </div>
+  
+
 </div>
-<button>
-  <a href="{{ route('utilisateurs.create' ) }}" class="nav-link collapsed"> <i class="fas fa-plus"></i> Ajouter un utilisateur</a>
-</button>
+
 <br><br>
                 <table class="table table-hover">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
-                        <th scope="col"> Name </th>
+                        <th scope="col"> Nom </th>
                         <th scope="col"> Email</th>
                         <th scope="col"> Role</th>
                         <th scope="col"> Operation</th>

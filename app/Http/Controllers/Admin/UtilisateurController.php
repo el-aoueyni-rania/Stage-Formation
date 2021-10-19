@@ -112,4 +112,14 @@ class UtilisateurController extends Controller
             
         ];
     }
+
+    public function search()
+    {
+        $q = request()->input('q');
+
+        $utilisateurs = User::where('name' , 'like' , "%$q%")
+              ->orwhere('email' , 'like' , "%$q%")
+              ->paginate(6);
+              return view('admin.utilisateur.search')->with('utilisateurs' , $utilisateurs);
+    }
 }
