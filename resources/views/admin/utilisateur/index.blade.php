@@ -2,7 +2,7 @@
 
 @section('main')
 <main>
-  <br><br><br><br>
+  <br><br><br>
     <div class="row">   
         <div class="col-lg-3">
           @include('layouts.nav')       

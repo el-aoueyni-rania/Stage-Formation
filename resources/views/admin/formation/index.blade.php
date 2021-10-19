@@ -21,7 +21,7 @@
               <h1 style="text-align: center">Liste Des Formations</h1>
               <br><br>
               <button>
-                <a href="{{ route('formations.create' ) }}" class="nav-link collapsed" style="color: black"> <i class="fas fa-plus"></i> Ajouter Une Formation</a>
+                <a href="{{ route('formations.create' ) }}" class="nav-link collapsed" style="color: black"> Ajouter Une Formation</a>
               </button>
                 <table class="table table-hover">
                     <thead>

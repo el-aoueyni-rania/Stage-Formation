@@ -8,7 +8,7 @@
       </div>
       <div class="col-lg-9">
         <br><br><br><br>
-          <div class="row">
+          <div class="row justify-content-center">
     @if (session('storeFormation'))
     <div class="alert alert-dismissible alert-success fade show" role="alert">
       {{ session('storeFormation') }}
@@ -25,8 +25,9 @@
       </button>
     </div>
 @endif
-    <h3>Détails De Formation : {{ $formation ->id}} </h3>
-    <div class="card" style="width: 18rem;">
+
+    <div class="card" style="width: 60rem;">
+      <h5 class="card-header" style="text-align: center"> Détails De Formation : {{ $formation ->id}} </h5>
       <div class="card-body">
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><i class="fas fa-user"></i>  {{ $formation ->user_id}}</li>
