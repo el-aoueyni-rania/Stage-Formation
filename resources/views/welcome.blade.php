@@ -6,8 +6,8 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Centre !</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <div class="masthead-subheading">Bienvenu Dans Notre Centre !</div>
+                <div class="masthead-heading text-uppercase">heureux de vous rencontrer</div>
             </div>
         </header>
 
@@ -15,7 +15,7 @@
         <section class="page-section" id="objectif">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Objectif</h2>
+                    <h2 class="section-heading text-uppercase">Objectifs</h2>
                 </div>
                 <ul class="timeline">
                     <li>
@@ -57,11 +57,10 @@
                     <li class="timeline-inverted">
                         <div class="timeline-image">
                             <h4>
-                                Be Part
                                 <br />
-                                Of Our
+                                Bienvenu
                                 <br />
-                                Story!
+                                
                             </h4>
                         </div>
                     </li>
@@ -83,7 +82,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/wajdi.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Our Leader</div>
+                                <div class="portfolio-caption-heading">Président</div>
                                 <div class="portfolio-caption-subheading text-muted">Saidi Mohamed Wajdi</div>
                             </div>
                         </div>
@@ -155,7 +154,7 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h2 class="section-heading text-uppercase">Contactez-nous</h2>
                 </div>
                 <form action="{{ route('messages.store') }}" method="post">
                     @include('admin.message.create')
