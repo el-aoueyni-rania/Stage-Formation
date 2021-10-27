@@ -24,12 +24,13 @@
     <!----------------------------- navbar ------------------------------>
     @include('layouts.navbar1')
 
-        <div id="layoutSidenav">
+        <div >
                 <!----------------------------- main ------------------------------>
-                @yield('main')
-                <!----------------------------- footer ------------------------------>
-                @include('layouts.footer')
+                @yield('main')      
         </div>
+        <!----------------------------- footer ------------------------------>
+        @include('layouts.footer')
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>

@@ -25,7 +25,7 @@
                   <a href="{{ route('formations.create' ) }}" class="nav-link collapsed" style="color: black"> Ajouter Une Formation</a>
                 </button>
                 </div>
-                <table class="table table-hover">
+                <table class="table bg-light">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
