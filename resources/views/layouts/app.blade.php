@@ -42,7 +42,6 @@
                 @yield('content')
             </main>
     <!------------------------------ Footer ------------------------------------->
-    <br><br>
     @include('layouts.footer');
     
 

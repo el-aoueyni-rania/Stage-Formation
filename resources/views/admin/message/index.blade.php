@@ -12,7 +12,7 @@
             <div class="row"> 
               <h1 style="text-align: center">Liste Des Messages</h1>
               <br><br><br>
-                <table class="table table-hover">
+                <table class="table bg-light">
                     <thead>
                       <tr>
                         <th scope="col">#</th>
