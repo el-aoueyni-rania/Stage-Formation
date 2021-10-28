@@ -15,7 +15,7 @@ class MessageController extends Controller
      */
     public function index()
     {
-        return view('admin.message.index' , ['messages' => Message::paginate(15)]);
+        return view('admin.message.index' , ['messages' => Message::paginate(11)]);
     }
 
     /**
@@ -38,7 +38,7 @@ class MessageController extends Controller
     {
         $validatedData = $request->validate($this->validationRules());
         $message = Message::create($validatedData);
-        return redirect()->route('messages.create' , $message)->with('storeMessage' , 'Message submission successfuly !!!');
+        return redirect()->route('messages.create' , $message)->with('storeMessage' , 'message a été envoyé avec succès !!!');
     }
 
     /**

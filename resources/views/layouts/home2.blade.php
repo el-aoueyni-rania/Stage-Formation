@@ -20,18 +20,16 @@
         <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    <body >
+    <body class="bg-light" >
     <!----------------------------- navbar ------------------------------>
-    @include('layouts.navbar2')
-
-        <div id="layoutSidenav">
-            <div >
+                 @include('layouts.navbar2')
                 <!----------------------------- main ------------------------------>
-                @yield('main')
+                <div>
+                    @yield('main')
+                </div>
                 <!----------------------------- footer ------------------------------>
-                @include('layouts.footer')
-            </div>
-        </div>
+            @include('layouts.footer')
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>

@@ -8,18 +8,18 @@
           @include('layouts.nav')       
         </div>
         <div class="col-lg-9">
-          <br><br><br><br>
+          <br><br>
             <div class="row"> 
-              <h1 style="text-align: center">Liste Des Messages</h1>
+              <h1 style="text-align: center; text-shadow: 2px 2px 5px ; font-style: oblique;">Liste Des Messages</h1>
               <br><br><br>
-                <table class="table bg-light">
+                <table class="table ">
                     <thead>
-                      <tr>
+                      <tr >
                         <th scope="col">#</th>
-                        <th scope="col"> Name </th>
-                        <th scope="col"> Email</th>
-                        <th scope="col"> Phone</th>
-                        <th scope="col"> Message</th>
+                        <th scope="col"> <i class="fas fa-user"style="color: blue"></i> Name </th>
+                        <th scope="col"> <i class="fas fa-at" style="color: blue"></i> Email</th>
+                        <th scope="col"> <i class="fas fa-phone" style="color: blue"></i> Phone</th>
+                        <th scope="col"> <i class="fas fa-envelope" style="color: blue"></i> Message</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -40,6 +40,5 @@
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br>
 </main>
 @endsection

@@ -11,8 +11,9 @@
         </div>
        
         <div class="col-lg-9">
-            <br><br> <br><br><br><br><br><br>
+            <br><br> <br><br><br>
             <div class="row">
+                <h1 style="text-align: center; text-shadow: 2px 2px 5px ; font-style: oblique;">Liste Des Classes</h1>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-55">
                         <a href="#!"><img class="card-img-top"  height="150" src="assets/img/b5.jfif" alt="..." /></a>
@@ -120,7 +121,7 @@
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br>
+
 </main>
 
     

@@ -24,7 +24,7 @@
                         <i class="fas fa-home"></i>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="font-style: oblique; text-transform: lowercase;">
                     <div class="dropdown show">
                         <a class="nav-link collapsed" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="sb-nav-link-icon"></div>
@@ -32,12 +32,19 @@
                                 <i class="fas fa-angle-down"></i>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="{{route('layouts.premiere')}}">Première année</a>
-                            <a class="dropdown-item" href="#">Deuxième année</a>
-                            <a class="dropdown-item" href="#">Troisième année</a>
-                            <a class="dropdown-item" href="#">Quatrième année</a>
-                            <a class="dropdown-item" href="#">Sinquième année</a>
-                            <a class="dropdown-item" href="#">Sixième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="{{route('layouts.premiere')}}">Première année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Deuxième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Troisième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Quatrième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Sinquième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Sixième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Septième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Huitième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Neuvième année</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Première année secondaire</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Deuxième année secondaire</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Troisième année secondaire</a>
+                            <a style="text-transform: lowercase;" class="dropdown-item" href="#">Baccalauréat</a>
                         </div>
                     </div>     
                 </li>          

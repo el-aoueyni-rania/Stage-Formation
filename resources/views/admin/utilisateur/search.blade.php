@@ -39,9 +39,9 @@
                     <br><br><br>
                     <div class="g1">
                         <div class="form-group mr-1 mb-1">
-                            <button class="btn btn-info">
+                            <button class="btn " style="background-color: blue">
                                 <a href="{{ route('utilisateurs.create') }}" class="nav-link collapsed"
-                                    style="color: black"> Ajouter un utilisateur</a>
+                                    style="color: white"> Ajouter un utilisateur</a>
                             </button>
                         </div>
                         <div  style="margin-left: 300px">
@@ -50,17 +50,17 @@
                     </div>
                         
                         @if (request()->input())
-                            <h6 style="margin-bottom: 20px">{{ $utilisateurs->total() }} résultat(s) pour la recherche "{{ request()->q }}"</h6>
+                            <h6 style="margin-bottom: 20px ; text-align : center ; color : blue;">{{ $utilisateurs->total() }} résultat(s) pour la recherche "{{ request()->q }}"</h6>
                         @endif
                         <div>
                             <table class="table bg-light" >
                                 <thead>
                                     <tr>
                                         <th scope="col">#</th>
-                                        <th scope="col"> Nom </th>
-                                        <th scope="col"> Email</th>
-                                        <th scope="col"> Role</th>
-                                        <th scope="col"> Operation</th>
+                                        <th scope="col"> <i class="fas fa-user"style="color: blue"></i> Nom </th>
+                                        <th scope="col"> <i class="fas fa-at" style="color: blue"></i>  Email</th>
+                                        <th scope="col"><i class="fas fa-user-tag "style="color: blue"></i> Role</th>
+                                        <th scope="col"><i class="fas fa-edit" style="color: blue"></i> Operation</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -72,10 +72,10 @@
                                             <td>{{ $utilisateur->role }} </td>
                                             <td>
                                                 <a href="{{ route('utilisateurs.edit', ['utilisateur' => $utilisateur->id]) }}"
-                                                    class="btn btn-warning"
+                                                    class="btn "
                                                     title=" edit utilisateur : {{ $utilisateur->id }} "><i
                                                         class="fas fa-edit"></i></a>
-                                                <a href="#" class="btn btn-danger"
+                                                <a href="#" class="btn "
                                                     title=" delete utilisateur : {{ $utilisateur->id }} "
                                                     onclick="event.preventDefault(); document.querySelector('#delete-utilisateur-form').submit()">
                                                     <i class="fas fa-trash-alt"></i></a>

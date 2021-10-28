@@ -23465,12 +23465,15 @@ body {
 .ft{
   font-style: italic;
   color: black;
+  text-transform: lowercase;
+  padding-left : 5px;
 }
 
 .titr{
-  color: black;
+  color: blue;
   font-style: italic;
   font-size: 4ex;
+  text-shadow: 2px 2px 5px ;
 }
 .mm{
  margin-left: 600px;

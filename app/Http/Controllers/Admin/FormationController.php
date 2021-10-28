@@ -38,7 +38,7 @@ class FormationController extends Controller
     {
         $validatedData = $request->validate($this->validationRules());
         $formation = Formation::create($validatedData);
-        return redirect()->route('formations.show' , $formation)->with('storeFormation' , 'Formation has been added successfuly !!!');
+        return redirect()->route('formations.show' , $formation)->with('storeFormation' , 'Formation a été ajouté avec succès !!!');
     }
 
     /**
@@ -74,7 +74,7 @@ class FormationController extends Controller
     {
         $validatedData = $request->validate($this->validationRules());
         $formation->update($validatedData);
-        return redirect()->route('formations.show' , $formation)->with('updateFormation' , 'Formation has been updated successfuly !!!');
+        return redirect()->route('formations.show' , $formation)->with('updateFormation' , 'Formation a été mis à jour avec succès !!!');
     }
 
     /**
@@ -86,7 +86,7 @@ class FormationController extends Controller
     public function destroy(Formation $formation)
     {
         $formation->delete();
-        return redirect()->route('formations.index')->with('deleteFormation' , 'Formation has been deleted !!!');
+        return redirect()->route('formations.index')->with('deleteFormation' , 'Formation a été supprimé avec succès !!!');
     }
 
     private function validationRules()

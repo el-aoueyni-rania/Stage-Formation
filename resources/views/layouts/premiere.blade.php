@@ -12,7 +12,8 @@
         </div>
        
         <div class="col-lg-9">
-            <br><br> <br><br><br><br><br><br>
+            <br><br> <br><br><br>
+            <h1 style="text-align: center; text-shadow: 2px 2px 5px ; font-style: oblique;">Liste Des Matières</h1>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card h-55">
@@ -65,7 +66,6 @@
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><br><br>
 </main>
 
     
