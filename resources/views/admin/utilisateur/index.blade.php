@@ -8,10 +8,10 @@
                 @include('layouts.nav')
             </div>
             <div class="col-lg-9">
-                <br><br><br><br>
+                <br><br><br>
                 <div class="row">
 
-                    <h1 style="text-align: center">Liste Des Utilisateurs</h1>
+                    <h1 style="text-align: center; text-shadow: 2px 2px 5px ; font-style: oblique;">Liste Des Utilisateurs</h1>
                     @if (session('deleteUtilisateur'))
                         <div class="alert alert-dismissible alert-success fade show" role="alert">
                             {{ session('deleteUtilisateur') }}
@@ -39,9 +39,9 @@
                     <br><br>
                     <div class="g1">
                         <div class=" mr-1 mb-1">
-                            <button class="btn btn-info">
+                            <button class="btn " style="background-color: blue">
                                 <a href="{{ route('utilisateurs.create') }}" class="nav-link collapsed"
-                                    style="color: black"> Ajouter un utilisateur</a>
+                                    style="color: white"> Ajouter un utilisateur</a>
                             </button>
                         </div>
                         <div style="margin-left: 300px">
@@ -54,10 +54,10 @@
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col"> Nom </th>
-                                <th scope="col"> Email</th>
-                                <th scope="col"> Role</th>
-                                <th scope="col"> Operation</th>
+                                <th scope="col"> <i class="fas fa-user"style="color: blue"></i> Nom </th>
+                                <th scope="col"> <i class="fas fa-at" style="color: blue"></i>  Email</th>
+                                <th scope="col"><i class="fas fa-user-tag "style="color: blue"></i> Role</th>
+                                <th scope="col"><i class="fas fa-edit" style="color: blue"></i> Operation</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -69,11 +69,10 @@
                                     <td>{{ $utilisateur->role }} </td>
                                     <td>
                                         <a href="{{ route('utilisateurs.edit', ['utilisateur' => $utilisateur->id]) }}"
-                                            class="btn btn-warning"
-                                            title=" edit utilisateur : {{ $utilisateur->id }} "><i
-                                                class="fas fa-edit"></i></a>
-                                        <a href="#" class="btn btn-danger"
-                                            title=" delete utilisateur : {{ $utilisateur->id }} "
+                                            class="btn " 
+                                            title=" modifier utilisateur : {{ $utilisateur->id }} "><i class="fas fa-user-edit"></i></a>
+                                        <a href="#" class="btn " 
+                                            title=" supprimer utilisateur : {{ $utilisateur->id }} "
                                             onclick="event.preventDefault(); document.querySelector('#delete-utilisateur-form').submit()">
                                             <i class="fas fa-trash-alt"></i></a>
                                         <form

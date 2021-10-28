@@ -20,7 +20,7 @@
     <link href="{{ asset('css/styles.css') }}" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
-    <body >
+    <body class="bg-light" >
     <!----------------------------- navbar ------------------------------>
     @include('layouts.navbar1')
 

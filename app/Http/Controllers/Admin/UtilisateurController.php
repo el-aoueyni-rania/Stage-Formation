@@ -43,7 +43,7 @@ class UtilisateurController extends Controller
         $utilisateur->password = Hash::make($request['password']);
         $utilisateur->role = $request->role;
         $utilisateur->save();
-        return redirect()->route('utilisateurs.index' , $utilisateur)->with('storeUtilisateur' , 'User has been added successfuly !!!');
+        return redirect()->route('utilisateurs.index' , $utilisateur)->with('storeUtilisateur' , 'utilisateur a été ajouté avec succès !!!');
     }
 
     /**
@@ -79,7 +79,7 @@ class UtilisateurController extends Controller
     {
         $validatedData = $request->validate($this->validationRules2());
         $utilisateur->update($validatedData);
-        return redirect()->route('utilisateurs.index' , $utilisateur)->with('updateUtilisateur' , 'User has been updated successfuly !!!');
+        return redirect()->route('utilisateurs.index' , $utilisateur)->with('updateUtilisateur' , 'utilisateur a été mis à jour avec succès !!!');
     }
 
     /**
@@ -91,7 +91,7 @@ class UtilisateurController extends Controller
     public function destroy(User $utilisateur)
     {
         $utilisateur->delete();
-        return redirect()->route('utilisateurs.index')->with('deleteUtilisateur' , 'Utilisateur has been deleted !!!');
+        return redirect()->route('utilisateurs.index')->with('deleteUtilisateur' , 'utilisateur a été supprimé avec succès !!!');
     }
     private function validationRules()
     {

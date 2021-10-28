@@ -81,6 +81,6 @@ class RegisterController extends Controller
         $utilisateur->password = Hash::make($request['password']);
         $utilisateur->role = $request->role;
         $utilisateur->save();
-        return redirect()->route('registers.index' , $utilisateur)->with('storeUtilisateur' , 'User has been added successfuly !!!');
+        return redirect()->route('registers.index' , $utilisateur)->with('storeUtilisateur' , 'utilisateur a été ajouté avec succès  !!!');
     }
 }
