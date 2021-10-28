@@ -30,7 +30,7 @@ class LoginController extends Controller
     //protected $redirectTo = RouteServiceProvider::HOME;
 
     public function redirectTo(){
-        if (Auth::user()->role){
+        if (Auth::user()->role == 'admin'){
             return'/admin-dashboard';
         }
     

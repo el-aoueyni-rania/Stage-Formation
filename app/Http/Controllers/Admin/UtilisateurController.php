@@ -99,7 +99,7 @@ class UtilisateurController extends Controller
             'name' => 'required',
             'email' => 'required',
             'password' =>'required|min:8', 
-            'role' =>  'required|integer|between:0,1',
+            'role' =>  'required',
             
         ];
     }
@@ -108,7 +108,7 @@ class UtilisateurController extends Controller
         return [
             'name' => 'required',
             'email' => 'required', 
-            'role' =>  'required|integer|between:0,1',
+            'role' =>  'required',
             
         ];
     }

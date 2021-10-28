@@ -16,11 +16,12 @@ class RedirectIfAuthenticated
      * @param  string|null  $guard
      * @return mixed
      */
+    
     public function handle($request, Closure $next, $guard = null)
     {
         if (Auth::guard($guard)->check()) {
             //return redirect(RouteServiceProvider::HOME);
-            if (Auth::user()->role){
+            if (Auth::user()->role == 'admin'){
                 return'/admin-dashboard';
             }
         

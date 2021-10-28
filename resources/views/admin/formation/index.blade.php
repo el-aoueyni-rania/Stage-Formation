@@ -21,8 +21,8 @@
               <h1 style="text-align: center; text-shadow: 2px 2px 5px ; font-style: oblique;">Liste Des Formations</h1>
               <br><br>
               <div class="form-group mr-1 mb-1">
-                <button class="btn" style="background-color: blue">
-                  <a href="{{ route('formations.create' ) }}" class="nav-link collapsed" style="color: white"> Ajouter Une Formation</a>
+                <button class="btn" style="background-color: blue ;">
+                  <a href="{{ route('formations.create' ) }}" class="nav-link collapsed" style="color: white ; "> Ajouter Une Formation</a>
                 </button>
                 </div>
                 <table class="table bg-light">
